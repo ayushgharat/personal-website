@@ -9,14 +9,9 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className='h-full font-mono'>
+    <main className='h-full'>
       <div>
-        <Header/>
         <Homepage/>
-        <WhoAmI/>
-        <Projects/>
-        <Aspirations/>
-        <Contact/>
       </div>
     </main>
   )
