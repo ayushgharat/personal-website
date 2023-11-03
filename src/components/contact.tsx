@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center justify-start bg-gradient-to-b from-red-400 to-indigo-700 h-[100vh] py-20 px-20">
+    <div className="flex flex-col items-center justify-start bg-gradient-to-b from-red-400 to-indigo-700 h-fit py-20 px-20 pb-80">
       <span className="text-white text-[60px]">Contact Me</span>
 
       <span className="text-white px-5 my-20 text-xl leading-loose">
@@ -14,7 +15,7 @@ const Contact = () => {
       </span>
 
       <div className="grid grid-cols-2 gap-10 w-full ps-10 pe-20">
-        <button className="bg-white border-red-500 rounded-lg border-1 px-6 py-4 border-2 flex items-center justify-center gap-5 hover:bg-red-500 hover:text-white">
+        <Link href={"mailto:gharatayush27@gmail.com?subject=I%20Want%20To%20Connect"} className="bg-white border-red-500 rounded-lg border-1 px-6 py-4 border-2 flex items-center justify-center gap-5 hover:bg-red-500 hover:text-white">
           <Image
             src={"/GmailIcon.png"}
             alt="Gmail Icon"
@@ -22,8 +23,8 @@ const Contact = () => {
             height={20}
           ></Image>
           <span className="text-xl">Send me an Email</span>
-        </button>
-        <button className="bg-white border-[#0072b1] rounded-lg border-1 px-6 py-4 border-2 flex items-center justify-center gap-5 hover:bg-[#0072b1] hover:text-white">
+        </Link>
+        <Link href={"https://www.linkedin.com/in/ayush-gharat"} className="bg-white border-[#0072b1] rounded-lg border-1 px-6 py-4 border-2 flex items-center justify-center gap-5 hover:bg-[#0072b1] hover:text-white">
           <Image
             src={"/LinkedinIcon.png"}
             alt="LinkedIn Icon"
@@ -31,9 +32,9 @@ const Contact = () => {
             height={20}
           ></Image>
           <span className="text-xl">Connect on LinkedIn</span>
-        </button>
+        </Link>
 
-        <button className="bg-white border-black rounded-lg border-1 px-6 py-4 border-2 flex items-center justify-center gap-5 hover:bg-black hover:text-white">
+        <Link href={"https://www.github.com/ayushgharat"} className="bg-white border-black rounded-lg border-1 px-6 py-4 border-2 flex items-center justify-center gap-5 hover:bg-black hover:text-white">
           <Image
             src={"/githubIcon.png"}
             alt="Github Icon"
@@ -41,10 +42,10 @@ const Contact = () => {
             height={20}
           ></Image>
           <span className="text-xl">Follow on Github</span>
-        </button>
+        </Link>
 
         <div className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-lg p-[2px]">
-          <button className="w-full bg-white border-transparent rounded-lg px-6 py-4 border-2 flex items-center justify-center gap-5 hover:bg-transparent hover:text-white">
+          <Link href={"https://www.instagram.com/ayush_gharat27/"} className="w-full bg-white border-transparent rounded-lg px-6 py-4 border-2 flex items-center justify-center gap-5 hover:bg-transparent hover:text-white">
             <Image
               src={"/instagramIcon.png"}
               alt="Instagram Icon"
@@ -52,7 +53,7 @@ const Contact = () => {
               height={20}
             ></Image>
             <span className="text-xl">Follow on Instagram</span>
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import ReactCurvedText from "react-curved-text";
 
 const WhoAmI = () => {
   return (
-    <div className="flex items-center justify-between gap-80 bg-gradient-to-b from-[#004e92] to-green-500 h-[100vh] px-40 w-100% overflow-hidden">
+    <div className="flex items-center justify-between gap-80 bg-gradient-to-b from-[#004e92] to-green-500 h-[120vh] px-40 w-100% overflow-hidden">
       <div className="flex flex-col gap-5 items-center justify-center">
         <span className="text-white">
           I am an avid learner, and an opportunity which resonates with me will
