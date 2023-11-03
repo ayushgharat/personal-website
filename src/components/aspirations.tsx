@@ -37,7 +37,7 @@ const Aspirations = () => {
           </span>
         </div>
 
-        <Image src={""}></Image>
+        {/* <Image src={""}></Image> */}
       </div>
     </div>
   );
