@@ -50,7 +50,7 @@ export const TextRevealByWord: FC<TextRevealByWordProps> = ({
           I am a CS Junior at Georgia Tech passionate about building modern,
           ambitious tools that can positively impact people.
         </span>
-        <RainbowButton className="mt-8 ms-[3rem] font-body">Let's connect</RainbowButton>
+        <RainbowButton className="mt-8 ms-[3rem] font-body">Let&apos;s connect</RainbowButton>
 
         <span className="mt-12 font-body text-xl font-light text-start px-[3rem]">
           Or keep scrolling and learn more about what I have been working on ...

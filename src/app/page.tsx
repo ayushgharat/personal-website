@@ -1,4 +1,3 @@
-import Aspirations from '@/components/aspirations'
 import Contact from '@/components/contact'
 import Header from '@/components/header'
 import Homepage from '@/components/homepage'

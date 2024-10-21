@@ -43,7 +43,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="mt-40 flex flex-col relative items-center p-5 justify-between h-[120vh]">
+    <div id="skills" className="mt-40 flex flex-col relative items-center p-5 justify-between h-[120vh]">
       <div className="flex-col font-body flex px-5 text-lg max-w-4xl mb-20">
         <span className="font-header text-4xl font-bold px-[3rem]">Skills</span>
         <span className="mt-10 font-body text-xl font-light text-start px-[3rem]">

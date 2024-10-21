@@ -9,7 +9,7 @@ const Homepage = () => {
   return (
     <div className=" flex h-[90vh] w-full flex-col items-center justify-center bg-background">
       <span className="z-10 whitespace-pre-wrap text-center text-5xl font-bold font-header tracking-tighter text-black">
-        Hey, it's Ayush!
+        Hey, it&apos;s Ayush!
       </span>
       <Ripple />
     </div>
