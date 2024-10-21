@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import FlickeringGrid from "./ui/flickering-grid";
@@ -12,19 +12,11 @@ import {
 } from "react-icons/fa";
 
 const Contact = () => {
-  const scrollToContact = (e: React.MouseEvent) => {
-    e.preventDefault();
-    const contactElement = document.querySelector("#contact") as HTMLElement;
-    if (contactElement) {
-      window.scrollTo({
-        top: contactElement.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
-    <div id="contact" className="relative flex h-[100vh] w-full flex-col items-center justify-center rounded-lg border bg-white md:shadow-xl">
+    <div
+      id="contact"
+      className="relative flex h-[100vh] w-full flex-col items-center justify-center rounded-lg border bg-white md:shadow-xl"
+    >
       <div className="max-w-4xl p-5 flex flex-col">
         <span className="pointer-events-none z-10 whitespace-pre-wrap font-header text-start text-4xl font-bold leading-none tracking-tighter ">
           Contact Me
@@ -43,7 +35,7 @@ const Contact = () => {
           connect with me on the following platforms
         </span>
         <div className="flex gap-x-8 mt-20 font-body">
-          <Button className="flex gap-x-3" onClick={scrollToContact}>
+          <Button className="flex gap-x-3">
             <Link
               href={`https://www.linkedin.com/in/ayush-gharat/`}
               className="flex gap-x-3"
@@ -54,7 +46,7 @@ const Contact = () => {
               LinkedIn
             </Link>
           </Button>
-          <Button onClick={scrollToContact}>
+          <Button>
             <Link
               href={`https://github.com/ayushgharat`}
               className="flex gap-x-3"
@@ -65,7 +57,7 @@ const Contact = () => {
               Github
             </Link>
           </Button>
-          <Button className="flex gap-x-3" variant={`secondary`} onClick={scrollToContact}>
+          <Button className="flex gap-x-3" variant={`secondary`}>
             <Link
               href={`https://drive.google.com/file/d/1OgTktpPk-lxh0oefO5Zfwcn73k0bpazR/view?usp=sharing`}
               className="flex gap-x-3"
