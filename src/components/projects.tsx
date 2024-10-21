@@ -7,7 +7,7 @@ const features = [
     Icon: Tablet,
     name: "DAISIE",
     description: "Enables diagnosis of Alzheimer's and Parkinson's using an iPad app",
-    href: "/",
+    href: "https://devpost.com/software/daisie",
     cta: "Learn more",
     background: <div className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
