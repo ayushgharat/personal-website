@@ -1,17 +1,17 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Roboto_Mono } from "next/font/google";
+import { Syne, Raleway } from "next/font/google";
 
-const inter = Inter({
+const syne = Syne({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-syne",
 });
 
-const roboto_mono = Roboto_Mono({
+const raleway = Raleway({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-roboto-mono",
+  variable: "--font-raleway",
 });
 
 export const metadata: Metadata = {
@@ -29,7 +29,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={`${inter.variable} ${roboto_mono.variable}`}>
+      <body className={`${syne.variable} ${raleway.variable}`}>
         {children}
       </body>
     </html>
