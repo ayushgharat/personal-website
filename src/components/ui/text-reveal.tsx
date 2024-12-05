@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 import { cn } from "@/lib/utils";
 import { RainbowButton } from "./rainbow-button";
+import Link from "next/link";
 
 interface TextRevealByWordProps {
   text: string;
@@ -50,7 +51,16 @@ export const TextRevealByWord: FC<TextRevealByWordProps> = ({
           I am a CS Junior at Georgia Tech passionate about building modern,
           ambitious tools that can positively impact people.
         </span>
-        <RainbowButton className="mt-8 ms-[3rem] font-body">Let&apos;s connect</RainbowButton>
+        <RainbowButton className="mt-8 ms-[3rem] font-body">
+          <Link
+            href="https://www.linkedin.com/in/ayush-gharat/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit LinkedIn profile"
+          >
+            Let&apos;s connect
+          </Link>
+        </RainbowButton>
 
         <span className="mt-12 font-body text-xl font-light text-start px-[3rem]">
           Or keep scrolling and learn more about what I have been working on ...
